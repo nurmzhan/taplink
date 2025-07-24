@@ -33,7 +33,7 @@ export default function RussellISCTaplink() {
       id: "telegram",
       title: "Telegram-канал",
       icon: Send,
-      url: "https://t.me/russellisc",
+      url: "https://t.me/russell_isc",
       isPrimary: false,
     },
     {
