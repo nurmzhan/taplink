@@ -1,4 +1,5 @@
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next"
 
 export const metadata = {
   title: "Create Next App",
@@ -13,6 +14,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className="antialiased" style={{ fontFamily: "'Inter', 'Roboto', 'Helvetica Neue', Arial, 'sans-serif'" }}>
         {children}
+        <Analytics />
       </body>
     </html>
   );
