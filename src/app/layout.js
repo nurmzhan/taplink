@@ -13,17 +13,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <script async src={googleAnalyticsId}></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', '${Tag}');
-            `,
-          }}
-        />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-NTXQZNP44V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NTXQZNP44V');
+</script>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
       </head>
       <body className="antialiased" style={{ fontFamily: "'Inter', 'Roboto', 'Helvetica Neue', Arial, 'sans-serif'" }}>
